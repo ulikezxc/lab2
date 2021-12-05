@@ -1,0 +1,56 @@
+body{
+    background-color:rgb(255, 255, 128);
+}
+#primer_float{
+    margin-left: 10px;
+    margin-bottom: 1px;
+    float: right;
+    text-align: center;
+    color: rgba(131, 25, 21, 0.74);
+    border-style: dotted;
+    border-color: rgb(136, 39, 39);
+    font-style: italic;
+}
+.lorem{
+    text-align: justify;
+    color:rgb(75, 74, 74);
+    margin-left: 0.5cm;
+}
+#otnos{
+    position: relative;
+    left: 10%;
+    top: 0%;
+}
+#absolute{
+    position:absolute;
+    right: 25px;
+    bottom: 25px;
+}
+.menu {
+    border-radius: 0 10px 10px 0; /*скругляем границы блока*/
+    width: 280px;
+    background: rgb(255, 212, 146);
+    position: fixed; /* чтобы не перемещалось при прокрутке  */
+    height: 100px;
+    top: 350px;
+    left: -300px;
+    border-right: 25px solid rgb(255, 187, 0); /*граница справа */
+    padding: 10px;
+    transition: left 1s; /* выезжает за секунду */
+   }
+   .menu img {
+    float: left;
+    margin: 0 10px 0 0;
+   }
+   .menu::after {
+    font-size:larger;
+    content: 'Contacts';
+    color: #000;
+    position: absolute;
+    right: -20px; bottom: 30px;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+   }
+   .menu:hover {
+    left: 0; /*сдвиг вправо */
+   }
